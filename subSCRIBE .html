@@ -1,0 +1,80 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe to Unlock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="subscribe-modal" class="modal">
+        <div class="modal-content">
+            <h2>Subscribe to Unlock the Content</h2>
+            <p>Please subscribe to our YouTube channel to access this page.</p>
+            <div class="subscribe-button">
+                <!-- YouTube Subscribe Button -->
+                <iframe src="https://en.m.wikipedia.org/wiki/File:YouTube_2024.svg"
+                        style="width: 100%; height: 80px; border: none;"></iframe>
+            </div>
+            <button id="confirm-subscription">Subscribe</button>
+        </div>
+    </div>
+</body>
+<script>
+    // Add click event to redirect to your YouTube link
+    document.getElementById("confirm-subscription").addEventListener("click", function() {
+        window.location.href = "https://youtube.com/@cooleditz97?si=O8F0-A7buGvwjd4a"; // Your YouTube channel link
+    });
+</script>
+</html><style>body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hidden {
+    display: none;
+}
+
+.subscribe-button iframe {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cc0000;
+}
+</style><script>document.getElementById("confirm-subscription").addEventListener("click", function() {
+    // Simulate that the user has subscribed
+    document.getElementById("subscribe-modal").style.display = "none";
+    document.getElementById("main-content").classList.remove("hidden");
+});
+</script>
